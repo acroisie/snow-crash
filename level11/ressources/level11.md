@@ -87,7 +87,7 @@ Erf nope..
 ```
 The hardcoded hash is not the password.
 
-4. **Try to find the password**
+4. **Exploit the script**
 
 If we look at the hash function, we see that is uses io.popen to execute commands.
 ```lua

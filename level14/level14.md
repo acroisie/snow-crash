@@ -24,7 +24,7 @@ find / -groups level14 2>/dev/null
 ```
 But we don't find anything interesting.
 ```bash
-~$ ls -ls /var/mail/
+~$ ls -la /var/mail/
 4 -rw-r--r--+ 1 root mail 58 May 14 10:26 level05
 ```
 Even after a lot of searching, we can't find anything...
@@ -108,11 +108,11 @@ The command above set a catchpoint on the `ptrace` syscall.
 ```
 The command above will execute the following commands when the catchpoint is hit. 1 is the error code of the `ptrace` syscall.
 ```bash
->set ($rax) = 0
+>set $eax=0
 >continue
 >end
 ```
-`$rax` is used to store the return value of the syscall.
+`$eax` is used to store the return value of the syscall.
 The command above will set the return value of the `ptrace` syscall to 0. We make believe that the check of the `ptrace` function was successful.
 
 5. **Change the return value of getuid**
