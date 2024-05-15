@@ -118,7 +118,7 @@ if __name__ == '__main__':
 
 We use the python script to decrypt the token.
 ```bash
-python3 /tmp/decrypt.py `cat token`
+python /tmp/decrypt.py `cat token`
 ```
 Returns
 ```bash
