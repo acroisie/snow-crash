@@ -26,6 +26,5 @@ This guide will walk you through the process of finding the password for the `fl
 
 5. **Create a symbolic link to the 'token' file and execute the program with this link as a parameter.**
 
-   - Open a terminal and navigate to the temporary directory with the command `cd /tmp`.
    - Create a symbolic link to the 'token' file with the command `ln -s ~/token /tmp/my_file`.
    - Execute the `level08` program with the symbolic link as a parameter using the command `./level08 /tmp/my_file`. 
